@@ -4,12 +4,231 @@
   box-sizing: border-box;
 }
 
-.container{
-  width: 600px;
-  height: 600px;
-  background-color: white;
+.container {
+  background-color: rgb(202, 202, 202);
+  max-width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
 }
 
-.ludo-box{
-  
+.header {
+
+}
+
+h3 {
+  background-color: blueviolet;
+  width: 100%;
+  color: white;
+  padding-block: 1rem;
+  padding-left: 2rem;
+}
+
+.ludo-container {
+  width: 40rem;
+  height: 40rem;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-ludo {
+  width: 100%;
+  top: 20px;
+  left: 20px;
+  position: relative;
+}
+
+.btm-ludo {
+  width: 100%;
+  top: 20px;
+  left: 20px;
+  position: relative;
+}
+
+.ludo-box {
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.ludo-blue {
+  background-color: blue;
+}
+.ludo-red {
+  background-color: red;
+}
+.ludo-green {
+  background-color: green;
+}
+.ludo-yellow {
+  background-color: yellow;
+}
+
+.inner-box {
+  height: 10rem;
+  width: 10rem;
+  background-color: rgb(253, 253, 253);
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-box-dice {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.dice {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: blue;
+  border: 2px solid black;
+}
+
+.red-dice {
+  background-color: red;
+}
+.green-dice {
+  background-color: green;
+}
+.yellow-dice {
+  background-color: yellow;
+}
+
+.dice-top {
+  gap: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dice-btm {
+  gap: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blue-boxes {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.green-boxes {
+  border-left: 2px solid black;
+}
+
+.top-blue-ludo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-red-ludo {
+  transform: rotate(90deg);
+  position: absolute;
+  top: -60px;
+  left: 299px;
+}
+
+.btm-green-ludo {
+  transform: rotate(-180deg);
+  position: absolute;
+  top: 240px;
+  left: 359px;
+}
+.btm-yellow-ludo {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 300px;
+  left: 60px;
+}
+
+.blue-boxes::after {
+  content: "";
+  height: 84px;
+  width: 84px;
+  background-color: blue;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  position: absolute;
+  left: 198px;
+  top: 19px;
+  transform: rotate(45deg);
+}
+
+.red-boxes::after {
+  background-color: red;
+  border: none;
+  left: 198px;
+  top: 17px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+.yellow-boxes::after {
+  background-color: yellow;
+  border: none;
+  left: 198px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  top: 18px;
+}
+.green-boxes::after {
+  background-color: green;
+  left: 198px;
+  top: 18px;
+}
+
+.blue-box,
+.red-box,
+.green-box,
+.yellow-box,
+.blank-box {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(249, 249, 249);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 90;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.red-box {
+  background-color: red;
+}
+
+.ludo-box-btm {
+  display: flex;
+  align-items: center;
+}
+
+.mid-boxes {
+  display: flex;
+}
+
+.blue-box {
+  background-color: blue;
+}
+
+.green-box {
+  background-color: green;
+}
+.yellow-box {
+  background-color: yellow;
 }
